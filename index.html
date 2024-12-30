@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SIDEBAR</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <section id="main" class="d-flex align-item-center justify-item-center min-vh-100 justify-content-center bg-color">
+        <div class="container">
+            <div id="mySidebar" class="sidebar">
+                <img onclick="closeNav()" class="close-svg" src="./assests/images/cross-img.svg" alt="cross-img">
+                <div class="heading">Sidebar</div>
+                <button class="nav-btn mt-25">Link 1</button>
+                <button class="nav-btn mt-5">Link 2</button>
+                <button class="nav-btn mt-5">Link 3</button>
+                <button class="nav-btn mt-5">Link 4</button>
+                <button class="nav-btn mt-5">Link 5</button>
+            </div>
+            <div id="main-parent">
+                <h1 class="head">Sidebar</h1>
+                <button class="btn" onclick="openNav()">Open Sidebar</button>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "286px";
+            document.getElementById("main").style.backgroundColor = "#B9B9B9";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar");
+            document.getElementById("main-parent");
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
