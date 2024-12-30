@@ -32,6 +32,13 @@
     background-color: #F7F7F7;
 }
 
+.bg-color::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: red;
+}
+
 .mt-25 {
     margin-top: 25px;
 }
@@ -118,6 +125,7 @@
 .nav-btn:hover {
     background: linear-gradient(97.42deg, #128DFF -4.95%, #1444EF 109.04%);
     color: white;
+    border: none;
 }
 
 .close-svg {
