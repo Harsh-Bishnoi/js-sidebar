@@ -32,13 +32,6 @@
     background-color: #F7F7F7;
 }
 
-.bg-color::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-color: red;
-}
-
 .mt-25 {
     margin-top: 25px;
 }
